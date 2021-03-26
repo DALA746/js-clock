@@ -1,0 +1,40 @@
+body {
+    /* Background effekt */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+}
+
+.clock {
+    /* För placering i mittten */
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform:translateX(-50%) translateY(-50%);
+
+    /* Text design*/
+    color:white;
+    font-size:50px;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 7px;
+  }
+
+#MyClockDisplay { 
+    /*Glow terxt*/
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Background effekt */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
